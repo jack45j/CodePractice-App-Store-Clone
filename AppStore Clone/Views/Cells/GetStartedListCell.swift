@@ -27,7 +27,7 @@ class GetStartedListCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        uiImgViewGetStartedList.layer.cornerRadius = 14.0
+        uiViewOverLay.layer.cornerRadius = 14.0
     }
-
 }

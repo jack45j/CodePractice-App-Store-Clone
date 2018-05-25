@@ -17,6 +17,10 @@ extension TodayViewController: UICollectionViewDataSource, UICollectionViewDeleg
         /// ex:
         /// collectionView.registerReusableCell(WorldPremiereCell.self)
         collectionView.registerReusableCell(GetStartedListCell.self)
+        collectionView.registerReusableCell(AppOfTheDayCell.self)
+        collectionView.registerReusableCell(FromTheEditorsCell.self)
+        collectionView.registerReusableCell(WorldPremiereCell.self)
+        collectionView.registerSupplementaryView(TodaySectionHeaderCell.self, kind: UICollectionElementKindSectionHeader)
         
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -30,7 +34,7 @@ extension TodayViewController: UICollectionViewDataSource, UICollectionViewDeleg
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return 8
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -39,7 +43,11 @@ extension TodayViewController: UICollectionViewDataSource, UICollectionViewDeleg
             /// return any cell you want
             /// ex:
             /// return WorldPremiereCell.dequeque(fromCollectionView: collectionView, atIndexPath: indexPath)
-            return GetStartedListCell.dequeue(fromCollectionView: collectionView, atIndexPath: indexPath)
+            return FromTheEditorsCell.dequeue(fromCollectionView: collectionView, atIndexPath: indexPath)
+        case 1:
+            return WorldPremiereCell.dequeue(fromCollectionView: collectionView, atIndexPath: indexPath)
+        case 2...4:
+            return AppOfTheDayCell.dequeue(fromCollectionView: collectionView, atIndexPath: indexPath)
         default:
             /// return default cell
             /// ex:
@@ -52,5 +60,11 @@ extension TodayViewController: UICollectionViewDataSource, UICollectionViewDeleg
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.bounds.width, height: 470)
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return CGSize(width: collectionView.bounds.width, height: TodaySectionHeaderCell.ViewHeight)
+    }
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        return TodaySectionHeaderCell.dequeue(fromCollectionView: collectionView, ofKind: kind, atIndexPath: indexPath)
     }
 }

@@ -17,6 +17,14 @@
 		D24B700C20B6997C0043A536 /* GetStartedListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D24B700A20B6997C0043A536 /* GetStartedListCell.xib */; };
 		D24B700F20B6A07A0043A536 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24B700E20B6A07A0043A536 /* UICollectionView+Reusable.swift */; };
 		D24B701120B6A0C30043A536 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24B701020B6A0C30043A536 /* Reusable.swift */; };
+		D24D4C2820B7B07E00D6C115 /* AppOfTheDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24D4C2620B7B07E00D6C115 /* AppOfTheDayCell.swift */; };
+		D24D4C2920B7B07E00D6C115 /* AppOfTheDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D24D4C2720B7B07E00D6C115 /* AppOfTheDayCell.xib */; };
+		D24D4C2C20B7D03200D6C115 /* FromTheEditorsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24D4C2A20B7D03200D6C115 /* FromTheEditorsCell.swift */; };
+		D24D4C2D20B7D03200D6C115 /* FromTheEditorsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D24D4C2B20B7D03200D6C115 /* FromTheEditorsCell.xib */; };
+		D24D4C3020B7D30C00D6C115 /* WorldPremiereCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24D4C2E20B7D30C00D6C115 /* WorldPremiereCell.swift */; };
+		D24D4C3120B7D30C00D6C115 /* WorldPremiereCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D24D4C2F20B7D30C00D6C115 /* WorldPremiereCell.xib */; };
+		D24D4C3520B7E85C00D6C115 /* TodaySectionHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24D4C3320B7E85C00D6C115 /* TodaySectionHeaderCell.swift */; };
+		D24D4C3620B7E85C00D6C115 /* TodaySectionHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D24D4C3420B7E85C00D6C115 /* TodaySectionHeaderCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +40,14 @@
 		D24B700A20B6997C0043A536 /* GetStartedListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GetStartedListCell.xib; sourceTree = "<group>"; };
 		D24B700E20B6A07A0043A536 /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
 		D24B701020B6A0C30043A536 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		D24D4C2620B7B07E00D6C115 /* AppOfTheDayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppOfTheDayCell.swift; sourceTree = "<group>"; };
+		D24D4C2720B7B07E00D6C115 /* AppOfTheDayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppOfTheDayCell.xib; sourceTree = "<group>"; };
+		D24D4C2A20B7D03200D6C115 /* FromTheEditorsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromTheEditorsCell.swift; sourceTree = "<group>"; };
+		D24D4C2B20B7D03200D6C115 /* FromTheEditorsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FromTheEditorsCell.xib; sourceTree = "<group>"; };
+		D24D4C2E20B7D30C00D6C115 /* WorldPremiereCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldPremiereCell.swift; sourceTree = "<group>"; };
+		D24D4C2F20B7D30C00D6C115 /* WorldPremiereCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorldPremiereCell.xib; sourceTree = "<group>"; };
+		D24D4C3320B7E85C00D6C115 /* TodaySectionHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaySectionHeaderCell.swift; sourceTree = "<group>"; };
+		D24D4C3420B7E85C00D6C115 /* TodaySectionHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodaySectionHeaderCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +112,9 @@
 		D24B700820B698320043A536 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D24B700920B6997C0043A536 /* GetStartedListCell.swift */,
-				D24B700A20B6997C0043A536 /* GetStartedListCell.xib */,
+				D24D4C3320B7E85C00D6C115 /* TodaySectionHeaderCell.swift */,
+				D24D4C3420B7E85C00D6C115 /* TodaySectionHeaderCell.xib */,
+				D24D4C3220B7E82D00D6C115 /* Cells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -109,6 +126,21 @@
 				D24B700E20B6A07A0043A536 /* UICollectionView+Reusable.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D24D4C3220B7E82D00D6C115 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D24D4C2A20B7D03200D6C115 /* FromTheEditorsCell.swift */,
+				D24D4C2B20B7D03200D6C115 /* FromTheEditorsCell.xib */,
+				D24B700920B6997C0043A536 /* GetStartedListCell.swift */,
+				D24B700A20B6997C0043A536 /* GetStartedListCell.xib */,
+				D24D4C2620B7B07E00D6C115 /* AppOfTheDayCell.swift */,
+				D24D4C2720B7B07E00D6C115 /* AppOfTheDayCell.xib */,
+				D24D4C2E20B7D30C00D6C115 /* WorldPremiereCell.swift */,
+				D24D4C2F20B7D30C00D6C115 /* WorldPremiereCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,9 +201,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D24D4C2920B7B07E00D6C115 /* AppOfTheDayCell.xib in Resources */,
 				D24B6FFC20B680F20043A536 /* LaunchScreen.storyboard in Resources */,
+				D24D4C3620B7E85C00D6C115 /* TodaySectionHeaderCell.xib in Resources */,
 				D24B6FF920B680F20043A536 /* Assets.xcassets in Resources */,
 				D24B6FF720B680F10043A536 /* Main.storyboard in Resources */,
+				D24D4C3120B7D30C00D6C115 /* WorldPremiereCell.xib in Resources */,
+				D24D4C2D20B7D03200D6C115 /* FromTheEditorsCell.xib in Resources */,
 				D24B700C20B6997C0043A536 /* GetStartedListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,9 +221,13 @@
 			files = (
 				D24B701120B6A0C30043A536 /* Reusable.swift in Sources */,
 				D24B700620B68E490043A536 /* TodayViewController+Addtions.swift in Sources */,
+				D24D4C3020B7D30C00D6C115 /* WorldPremiereCell.swift in Sources */,
+				D24D4C2C20B7D03200D6C115 /* FromTheEditorsCell.swift in Sources */,
 				D24B700F20B6A07A0043A536 /* UICollectionView+Reusable.swift in Sources */,
 				D24B6FF420B680F10043A536 /* TodayViewController.swift in Sources */,
+				D24D4C3520B7E85C00D6C115 /* TodaySectionHeaderCell.swift in Sources */,
 				D24B6FF220B680F10043A536 /* AppDelegate.swift in Sources */,
+				D24D4C2820B7B07E00D6C115 /* AppOfTheDayCell.swift in Sources */,
 				D24B700B20B6997C0043A536 /* GetStartedListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
