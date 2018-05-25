@@ -25,8 +25,11 @@ class AppOfTheDayCell: BaseRoundedCardCell {
     /// App subtitle
     @IBOutlet private weak var uiLblAppSubtitle: UILabel!
     
+    /// Visual effect blur vieew
     @IBOutlet private weak var uiViewBlurEffect: UIView!
     
+    
+    /// MARK - Factory Method
     internal static func dequeue(fromCollectionView collectionView:UICollectionView, atIndexPath indexPath: IndexPath) -> AppOfTheDayCell {
         guard let cell: AppOfTheDayCell = collectionView.dequeueReusableCell(indexPath: indexPath) else {
             fatalError("Failed to dequeue AppOfTheDayCell")

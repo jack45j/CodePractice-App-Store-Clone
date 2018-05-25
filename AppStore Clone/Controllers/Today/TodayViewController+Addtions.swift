@@ -30,11 +30,11 @@ extension TodayViewController: UICollectionViewDataSource, UICollectionViewDeleg
     /// MARK: UICollectionViewDataSource
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
+        return 3
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 8
+        return 4
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -46,7 +46,7 @@ extension TodayViewController: UICollectionViewDataSource, UICollectionViewDeleg
             return FromTheEditorsCell.dequeue(fromCollectionView: collectionView, atIndexPath: indexPath)
         case 1:
             return WorldPremiereCell.dequeue(fromCollectionView: collectionView, atIndexPath: indexPath)
-        case 2...4:
+        case 2:
             return AppOfTheDayCell.dequeue(fromCollectionView: collectionView, atIndexPath: indexPath)
         default:
             /// return default cell
@@ -65,6 +65,9 @@ extension TodayViewController: UICollectionViewDataSource, UICollectionViewDeleg
         return CGSize(width: collectionView.bounds.width, height: TodaySectionHeaderCell.ViewHeight)
     }
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        return TodaySectionHeaderCell.dequeue(fromCollectionView: collectionView, ofKind: kind, atIndexPath: indexPath)
+        let sectionHeader = TodaySectionHeaderCell.dequeue(fromCollectionView: collectionView, ofKind: kind, atIndexPath: indexPath)
+        sectionHeader.shouldShowProfileImage = (indexPath.section == 0)
+        
+        return sectionHeader
     }
 }

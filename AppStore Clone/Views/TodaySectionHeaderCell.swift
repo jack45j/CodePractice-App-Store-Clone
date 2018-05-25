@@ -9,11 +9,20 @@
 import UIKit
 
 class TodaySectionHeaderCell: UICollectionViewCell {
+    
     /// TodaySectionHeaderCell's height
     internal static var ViewHeight:CGFloat = 80.0
     
     /// Profile Image View
     @IBOutlet private weak var uiImgViewProfile: UIImageView!
+    
+    /// Hide Profile Image if the condition doesn't confirm
+    internal var shouldShowProfileImage: Bool = true {
+        didSet {
+            uiImgViewProfile.isHidden = !shouldShowProfileImage
+        }
+    }
+    
     
     // MARK: - Factory Method
     

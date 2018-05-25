@@ -13,7 +13,7 @@ class FromTheEditorsCell: BaseRoundedCardCell {
     /// Image View
     @IBOutlet private weak var uiImgViewFromTheEditors: UIImageView!
     
-    
+    /// MARK - Factory Method
     internal static func dequeue(fromCollectionView collectionView:UICollectionView, atIndexPath indexPath: IndexPath) -> FromTheEditorsCell {
         guard let cell: FromTheEditorsCell = collectionView.dequeueReusableCell(indexPath: indexPath) else {
             fatalError("Failed to dequeue AppOfTheDayCell")
