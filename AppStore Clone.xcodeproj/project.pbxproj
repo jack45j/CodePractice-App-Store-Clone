@@ -25,6 +25,7 @@
 		D24D4C3120B7D30C00D6C115 /* WorldPremiereCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D24D4C2F20B7D30C00D6C115 /* WorldPremiereCell.xib */; };
 		D24D4C3520B7E85C00D6C115 /* TodaySectionHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24D4C3320B7E85C00D6C115 /* TodaySectionHeaderCell.swift */; };
 		D24D4C3620B7E85C00D6C115 /* TodaySectionHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D24D4C3420B7E85C00D6C115 /* TodaySectionHeaderCell.xib */; };
+		D24D4C3820B7F23D00D6C115 /* BaseRoundedCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24D4C3720B7F23D00D6C115 /* BaseRoundedCardCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		D24D4C2F20B7D30C00D6C115 /* WorldPremiereCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorldPremiereCell.xib; sourceTree = "<group>"; };
 		D24D4C3320B7E85C00D6C115 /* TodaySectionHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaySectionHeaderCell.swift; sourceTree = "<group>"; };
 		D24D4C3420B7E85C00D6C115 /* TodaySectionHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodaySectionHeaderCell.xib; sourceTree = "<group>"; };
+		D24D4C3720B7F23D00D6C115 /* BaseRoundedCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRoundedCardCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 		D24D4C3220B7E82D00D6C115 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				D24D4C3720B7F23D00D6C115 /* BaseRoundedCardCell.swift */,
 				D24D4C2A20B7D03200D6C115 /* FromTheEditorsCell.swift */,
 				D24D4C2B20B7D03200D6C115 /* FromTheEditorsCell.xib */,
 				D24B700920B6997C0043A536 /* GetStartedListCell.swift */,
@@ -224,6 +227,7 @@
 				D24D4C3020B7D30C00D6C115 /* WorldPremiereCell.swift in Sources */,
 				D24D4C2C20B7D03200D6C115 /* FromTheEditorsCell.swift in Sources */,
 				D24B700F20B6A07A0043A536 /* UICollectionView+Reusable.swift in Sources */,
+				D24D4C3820B7F23D00D6C115 /* BaseRoundedCardCell.swift in Sources */,
 				D24B6FF420B680F10043A536 /* TodayViewController.swift in Sources */,
 				D24D4C3520B7E85C00D6C115 /* TodaySectionHeaderCell.swift in Sources */,
 				D24B6FF220B680F10043A536 /* AppDelegate.swift in Sources */,

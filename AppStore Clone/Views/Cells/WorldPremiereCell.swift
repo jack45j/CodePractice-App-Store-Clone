@@ -2,13 +2,13 @@
 //  WorldPremiereCell.swift
 //  AppStore Clone
 //
-//  Created by instance on 2018/5/25.
+//  Created by Yi-Cheng,Lin on 5/25/18
 //  Copyright © 2018年 Benson Lin. All rights reserved.
 //
 
 import UIKit
 
-class WorldPremiereCell: UICollectionViewCell {
+class WorldPremiereCell: BaseRoundedCardCell {
     
     /// Image View
     @IBOutlet private weak var uiImgViewWorldPremiere: UIImageView!

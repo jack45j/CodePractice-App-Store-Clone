@@ -2,7 +2,7 @@
 //  TodayViewController.swift
 //  AppStore Clone
 //
-//  Created by instance on 2018/5/24.
+//  Created by Yi-Cheng,Lin on 5/24/18
 //  Copyright © 2018年 Benson Lin. All rights reserved.
 //
 
