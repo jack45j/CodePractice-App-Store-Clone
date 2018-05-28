@@ -19,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="330" height="358"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tQ1-F1-1Bs">
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tQ1-F1-1Bs">
                         <rect key="frame" x="20" y="20" width="290" height="318"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app-of-the-day" translatesAutoresizingMaskIntoConstraints="NO" id="BmN-u3-yQl">
@@ -106,6 +106,7 @@
                 <outlet property="uiImgViewAppOfTheDay" destination="BmN-u3-yQl" id="W1W-EW-wcJ"/>
                 <outlet property="uiLblAppSubtitle" destination="YoM-if-hki" id="9jO-mE-J1h"/>
                 <outlet property="uiLblAppTitle" destination="2P4-fl-HAL" id="tal-rd-8nt"/>
+                <outlet property="uiViewBackGround" destination="tQ1-F1-1Bs" id="84g-jF-0bA"/>
                 <outlet property="uiViewBlurEffect" destination="yER-EJ-Yq6" id="EO9-E6-0E7"/>
             </connections>
         </collectionViewCell>

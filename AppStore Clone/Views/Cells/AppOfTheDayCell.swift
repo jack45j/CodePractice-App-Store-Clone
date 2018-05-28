@@ -10,6 +10,9 @@ import UIKit
 
 class AppOfTheDayCell: BaseRoundedCardCell {
     
+    /// BcakGround View
+    @IBOutlet private weak var uiViewBackGround: UIView!
+    
     /// ImageView
     @IBOutlet private weak var uiImgViewAppOfTheDay: UIImageView!
     
@@ -52,9 +55,7 @@ class AppOfTheDayCell: BaseRoundedCardCell {
         uiImgViewAppOfTheDay.addSubview(uiViewBlurEffect)
        
         
-        
-        uiImgViewAppOfTheDay.layer.cornerRadius = 14.0
-        uiImgViewAppIcon.layer.cornerRadius = 14.0
+        uiViewBackGround.layer.cornerRadius = 14.0
         uiBtnGetButton.layer.cornerRadius = uiBtnGetButton.bounds.height/2
     }
 }

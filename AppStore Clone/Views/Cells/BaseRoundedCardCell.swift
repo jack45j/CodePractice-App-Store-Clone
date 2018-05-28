@@ -81,8 +81,8 @@ extension BaseRoundedCardCell {
             motionManager.deviceMotionUpdateInterval = 0.02
             motionManager.startDeviceMotionUpdates(to: .main, withHandler: { (motion, error) in
                 if let motion = motion {
-                    let pitch = motion.attitude.pitch * 10 // x-axis
-                    let roll = motion.attitude.roll * 10 // y-axis
+                    let pitch = motion.attitude.pitch * 5 // x-axis
+                    let roll = motion.attitude.roll * 5 // y-axis
                     self.applyShadow(width: CGFloat(roll), height: CGFloat(pitch))
                 }
             })

@@ -18,7 +18,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="330" height="358"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WA1-HC-ef8">
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WA1-HC-ef8">
                         <rect key="frame" x="20" y="20" width="290" height="318"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-list" translatesAutoresizingMaskIntoConstraints="NO" id="ANF-nQ-gdd">
@@ -73,6 +73,7 @@
             </constraints>
             <connections>
                 <outlet property="uiImgViewGetStartedList" destination="ANF-nQ-gdd" id="m1G-PP-9Db"/>
+                <outlet property="uiViewBackGround" destination="WA1-HC-ef8" id="DTX-0p-Mg2"/>
                 <outlet property="uiViewOverLay" destination="koS-FV-AX3" id="1lE-ML-ZIo"/>
             </connections>
             <point key="canvasLocation" x="119" y="54"/>

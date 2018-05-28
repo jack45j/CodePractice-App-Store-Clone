@@ -11,6 +11,9 @@ import CoreMotion
 
 class GetStartedListCell: BaseRoundedCardCell {
     
+    /// BackGround View
+    @IBOutlet private weak var uiViewBackGround: UIView!
+    
     /// ImageView
     @IBOutlet private weak var uiImgViewGetStartedList: UIImageView!
     
@@ -27,7 +30,6 @@ class GetStartedListCell: BaseRoundedCardCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        uiImgViewGetStartedList.layer.cornerRadius = 14.0
-        uiViewOverLay.layer.cornerRadius = 14.0
+        uiViewBackGround.layer.cornerRadius = 14.0
     }
 }

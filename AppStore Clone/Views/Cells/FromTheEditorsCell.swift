@@ -10,6 +10,9 @@ import UIKit
 
 class FromTheEditorsCell: BaseRoundedCardCell {
     
+    /// BackGround View
+    @IBOutlet private weak var uiViewBackGround: UIView!
+    
     /// Image View
     @IBOutlet private weak var uiImgViewFromTheEditors: UIImageView!
     
@@ -23,7 +26,6 @@ class FromTheEditorsCell: BaseRoundedCardCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        uiImgViewFromTheEditors.layer.cornerRadius = 14.0
+        uiViewBackGround.layer.cornerRadius = 14.0
     }
 }

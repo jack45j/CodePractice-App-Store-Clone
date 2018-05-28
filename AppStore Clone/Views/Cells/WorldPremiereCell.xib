@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,7 +18,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="330" height="358"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r10-jA-HbE">
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r10-jA-HbE">
                         <rect key="frame" x="20" y="20" width="290" height="318"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monument-valley" translatesAutoresizingMaskIntoConstraints="NO" id="wDM-em-hkq">
@@ -69,9 +68,9 @@
                 <constraint firstItem="r10-jA-HbE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="OWy-gS-rWx"/>
                 <constraint firstItem="r10-jA-HbE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="tVF-Ey-3QD"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <connections>
                 <outlet property="uiImgViewWorldPremiere" destination="wDM-em-hkq" id="F5V-q5-xEK"/>
+                <outlet property="uiViewBackGround" destination="r10-jA-HbE" id="jjg-aO-Td3"/>
             </connections>
         </collectionViewCell>
     </objects>

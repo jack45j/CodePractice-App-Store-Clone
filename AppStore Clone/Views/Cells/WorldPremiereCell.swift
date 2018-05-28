@@ -10,6 +10,9 @@ import UIKit
 
 class WorldPremiereCell: BaseRoundedCardCell {
     
+    /// BackGround View
+    @IBOutlet private weak var uiViewBackGround: UIView!
+    
     /// Image View
     @IBOutlet private weak var uiImgViewWorldPremiere: UIImageView!
 
@@ -23,7 +26,7 @@ class WorldPremiereCell: BaseRoundedCardCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        uiViewBackGround.layer.cornerRadius = 14.0
         
-        uiImgViewWorldPremiere.layer.cornerRadius = 14.0
     }
 }
