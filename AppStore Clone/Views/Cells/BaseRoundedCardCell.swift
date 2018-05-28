@@ -17,62 +17,36 @@ class BaseRoundedCardCell: UICollectionViewCell {
     private var isPressed: Bool = false
     
     override func awakeFromNib() {
-        configureGestureRecognizer()
-    }
-    
-    
-    /// MARK: - Gesture Recognizer
-    
-    private func configureGestureRecognizer() {
-        /// Long Press Gesture Recognizer
-        LongPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(LongPressGestureHandler(GestureRecognizer:)))
-        LongPressGestureRecognizer?.minimumPressDuration = 0.08
-        addGestureRecognizer(LongPressGestureRecognizer!)
-    }
-    
-    @objc internal func LongPressGestureHandler(GestureRecognizer: UILongPressGestureRecognizer) {
-        if GestureRecognizer.state == .began {
-            /// animation of gesture started
-            LongPressBeganHandler()
-        } else if GestureRecognizer.state == .ended || GestureRecognizer.state == .cancelled {
-            /// animation of gesture eneded
-            LongPressEndedHandler()
-        }
-    }
-    
-    
-    /// MARK: - LongPressGesture Animation
-    
-    private func LongPressBeganHandler() {
-        guard !isPressed else {
-            return
-        }
         
-        isPressed = true
-        UIView.animate(withDuration: 0.5,
-                       delay: 0.0,
-                       usingSpringWithDamping: 0.8,
-                       initialSpringVelocity: 0.2,
-                       options: .beginFromCurrentState,
-                       animations: {
-                        self.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
-        }, completion: nil)
     }
     
-    private func LongPressEndedHandler() {
-        guard isPressed else {
-            return
+    
+    /// CollectionView Cell highlight animation.
+    
+    func animate(isHighlighted: Bool, completion: ((Bool) -> Void)?=nil) {
+        if isHighlighted {
+            UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0, options: [UIViewAnimationOptions.beginFromCurrentState], animations: {
+                self.transform = CGAffineTransform.identity.scaledBy(x: 0.96, y: 0.96)
+            }, completion: completion)
+        } else {
+            UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0, options: [UIViewAnimationOptions.beginFromCurrentState], animations: {
+                self.transform = .identity
+            }, completion: completion)
         }
-        
-        UIView.animate(withDuration: 0.5,
-                       delay: 0.0,
-                       usingSpringWithDamping: 0.4,
-                       initialSpringVelocity: 0.2,
-                       options: .beginFromCurrentState,
-                       animations: {
-                        self.transform = CGAffineTransform.identity
-        }) { (finished) in
-            self.isPressed = false
-        }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        self.animate(isHighlighted: true)
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesEnded(touches, with: event)
+        self.animate(isHighlighted: false)
+    }
+    
+    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesCancelled(touches, with: event)
+        self.animate(isHighlighted: false)
     }
 }

@@ -58,11 +58,27 @@
                     <tabBarItem key="tabBarItem" title="Today" image="today_apps" id="UCz-9f-WXh"/>
                     <connections>
                         <outlet property="uiCollectionViewTodayList" destination="Ehv-xZ-NcN" id="2TF-Al-8iV"/>
+                        <segue destination="t64-V2-zi9" kind="show" identifier="segueToDetailVC" id="zgo-dW-Pql"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="142" y="-530"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="QFP-sd-P9j">
+            <objects>
+                <viewController id="t64-V2-zi9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OZ6-Ia-UM8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.83254551887512207" green="0.82772833108901978" blue="0.95751672983169556" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Ves-Lu-S5l"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aGU-Ve-YDm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="790" y="-530"/>
         </scene>
         <!--Updates-->
         <scene sceneID="nzc-lg-3Z5">

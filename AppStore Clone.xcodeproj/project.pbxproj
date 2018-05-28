@@ -26,6 +26,8 @@
 		D24D4C3520B7E85C00D6C115 /* TodaySectionHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24D4C3320B7E85C00D6C115 /* TodaySectionHeaderCell.swift */; };
 		D24D4C3620B7E85C00D6C115 /* TodaySectionHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D24D4C3420B7E85C00D6C115 /* TodaySectionHeaderCell.xib */; };
 		D24D4C3820B7F23D00D6C115 /* BaseRoundedCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24D4C3720B7F23D00D6C115 /* BaseRoundedCardCell.swift */; };
+		D252A65A20BBF05F00BFCD76 /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D252A65920BBF05F00BFCD76 /* CardDetailViewController.swift */; };
+		D252A65E20BBF66100BFCD76 /* CardDetailTransitioningAnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D252A65D20BBF66100BFCD76 /* CardDetailTransitioningAnimationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		D24D4C3320B7E85C00D6C115 /* TodaySectionHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaySectionHeaderCell.swift; sourceTree = "<group>"; };
 		D24D4C3420B7E85C00D6C115 /* TodaySectionHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodaySectionHeaderCell.xib; sourceTree = "<group>"; };
 		D24D4C3720B7F23D00D6C115 /* BaseRoundedCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRoundedCardCell.swift; sourceTree = "<group>"; };
+		D252A65920BBF05F00BFCD76 /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
+		D252A65D20BBF66100BFCD76 /* CardDetailTransitioningAnimationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailTransitioningAnimationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				D24B700420B68D7E0043A536 /* Today */,
+				D252A65B20BBF06900BFCD76 /* CardDetail */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -124,8 +129,8 @@
 		D24B700D20B6A05F0043A536 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				D24B701020B6A0C30043A536 /* Reusable.swift */,
-				D24B700E20B6A07A0043A536 /* UICollectionView+Reusable.swift */,
+				D252A65C20BBF62D00BFCD76 /* UICollectionView+Reusable */,
+				D252A65D20BBF66100BFCD76 /* CardDetailTransitioningAnimationManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -144,6 +149,23 @@
 				D24D4C2F20B7D30C00D6C115 /* WorldPremiereCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		D252A65B20BBF06900BFCD76 /* CardDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D252A65920BBF05F00BFCD76 /* CardDetailViewController.swift */,
+			);
+			path = CardDetail;
+			sourceTree = "<group>";
+		};
+		D252A65C20BBF62D00BFCD76 /* UICollectionView+Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				D24B701020B6A0C30043A536 /* Reusable.swift */,
+				D24B700E20B6A07A0043A536 /* UICollectionView+Reusable.swift */,
+			);
+			path = "UICollectionView+Reusable";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +245,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D24B701120B6A0C30043A536 /* Reusable.swift in Sources */,
+				D252A65A20BBF05F00BFCD76 /* CardDetailViewController.swift in Sources */,
+				D252A65E20BBF66100BFCD76 /* CardDetailTransitioningAnimationManager.swift in Sources */,
 				D24B700620B68E490043A536 /* TodayViewController+Addtions.swift in Sources */,
 				D24D4C3020B7D30C00D6C115 /* WorldPremiereCell.swift in Sources */,
 				D24D4C2C20B7D03200D6C115 /* FromTheEditorsCell.swift in Sources */,

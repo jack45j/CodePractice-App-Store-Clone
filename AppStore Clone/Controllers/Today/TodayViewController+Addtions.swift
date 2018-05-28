@@ -27,6 +27,13 @@ extension TodayViewController: UICollectionViewDataSource, UICollectionViewDeleg
     }
     
     
+    /// MARK: UICollectionViewDelegate
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "segueToDetailVC", sender: self)
+    }
+    
+    
     /// MARK: UICollectionViewDataSource
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
