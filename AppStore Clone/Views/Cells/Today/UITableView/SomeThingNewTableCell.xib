@@ -22,7 +22,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MHW-icon-App-60x60" translatesAutoresizingMaskIntoConstraints="NO" id="bC0-1N-aPF">
-                        <rect key="frame" x="8" y="8" width="44" height="44"/>
+                        <rect key="frame" x="0.0" y="8" width="44" height="44"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="bC0-1N-aPF" secondAttribute="height" multiplier="1:1" id="QAG-uB-9lH"/>
                             <constraint firstAttribute="height" constant="44" id="iik-ui-tzt"/>
@@ -30,7 +30,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monster Hunter Notes : World" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AwA-0t-utY">
-                        <rect key="frame" x="60" y="8" width="184" height="33.5"/>
+                        <rect key="frame" x="52" y="8" width="192" height="33.5"/>
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -44,8 +44,8 @@
                         </constraints>
                         <state key="normal" title="GET"/>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Useful notes for hunters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEk-pb-5Tm">
-                        <rect key="frame" x="60" y="41.5" width="184" height="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Useful notes for hunters" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEk-pb-5Tm">
+                        <rect key="frame" x="52" y="41.5" width="192" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -61,7 +61,7 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="bC0-1N-aPF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="1CH-An-hsw"/>
+                    <constraint firstItem="bC0-1N-aPF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1CH-An-hsw"/>
                     <constraint firstItem="AwA-0t-utY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="HP7-1c-2RX"/>
                     <constraint firstItem="AwA-0t-utY" firstAttribute="leading" secondItem="bC0-1N-aPF" secondAttribute="trailing" constant="8" id="Ijz-yo-Urn"/>
                     <constraint firstItem="V1x-Ef-YNm" firstAttribute="leading" secondItem="DEk-pb-5Tm" secondAttribute="trailing" constant="8" id="MsA-8c-TGw"/>
