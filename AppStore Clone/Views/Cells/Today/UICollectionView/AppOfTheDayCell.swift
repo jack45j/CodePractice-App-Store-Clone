@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AppOfTheDayCell: BaseRoundedCardCell {
+class AppOfTheDayCell: BaseRoundedCardCell, NibReusable {
     
     /// BcakGround View
     @IBOutlet private weak var uiViewBackGround: UIView!
@@ -31,15 +31,6 @@ class AppOfTheDayCell: BaseRoundedCardCell {
     /// Visual effect blur vieew
     @IBOutlet private weak var uiViewBlurEffect: UIView!
     
-    
-    /// MARK - Factory Method
-    internal static func dequeue(fromCollectionView collectionView:UICollectionView, atIndexPath indexPath: IndexPath) -> AppOfTheDayCell {
-        guard let cell: AppOfTheDayCell = collectionView.dequeueReusableCell(indexPath: indexPath) else {
-            fatalError("Failed to dequeue AppOfTheDayCell")
-        }
-        return cell
-    }
-    
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -54,7 +45,7 @@ class AppOfTheDayCell: BaseRoundedCardCell {
         uiViewBlurEffect.addSubview(BlurEffectView)
         uiImgViewAppOfTheDay.addSubview(uiViewBlurEffect)
        
-        
+        uiImgViewAppIcon.layer.cornerRadius = 14.0
         uiViewBackGround.layer.cornerRadius = 14.0
         uiBtnGetButton.layer.cornerRadius = uiBtnGetButton.bounds.height/2
     }

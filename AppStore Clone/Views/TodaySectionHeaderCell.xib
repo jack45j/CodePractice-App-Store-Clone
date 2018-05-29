@@ -53,6 +53,8 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <connections>
                 <outlet property="uiImgViewProfile" destination="ghU-r3-ReH" id="ioe-yQ-q2U"/>
+                <outlet property="uiLblDate" destination="q3H-hh-spl" id="7AX-zq-Cwe"/>
+                <outlet property="uiLblWeekDay" destination="zKV-cg-1jn" id="Pvc-Po-Vz1"/>
             </connections>
         </collectionViewCell>
     </objects>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D21A3B5D20BD399100CC5B90 /* SomeThingNewTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21A3B5B20BD399100CC5B90 /* SomeThingNewTableCell.swift */; };
+		D21A3B5E20BD399100CC5B90 /* SomeThingNewTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D21A3B5C20BD399100CC5B90 /* SomeThingNewTableCell.xib */; };
 		D24B6FF220B680F10043A536 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24B6FF120B680F10043A536 /* AppDelegate.swift */; };
 		D24B6FF420B680F10043A536 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24B6FF320B680F10043A536 /* TodayViewController.swift */; };
 		D24B6FF720B680F10043A536 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D24B6FF520B680F10043A536 /* Main.storyboard */; };
@@ -15,8 +17,6 @@
 		D24B700620B68E490043A536 /* TodayViewController+Addtions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24B700520B68E490043A536 /* TodayViewController+Addtions.swift */; };
 		D24B700B20B6997C0043A536 /* GetStartedListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24B700920B6997C0043A536 /* GetStartedListCell.swift */; };
 		D24B700C20B6997C0043A536 /* GetStartedListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D24B700A20B6997C0043A536 /* GetStartedListCell.xib */; };
-		D24B700F20B6A07A0043A536 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24B700E20B6A07A0043A536 /* UICollectionView+Reusable.swift */; };
-		D24B701120B6A0C30043A536 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24B701020B6A0C30043A536 /* Reusable.swift */; };
 		D24D4C2820B7B07E00D6C115 /* AppOfTheDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24D4C2620B7B07E00D6C115 /* AppOfTheDayCell.swift */; };
 		D24D4C2920B7B07E00D6C115 /* AppOfTheDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D24D4C2720B7B07E00D6C115 /* AppOfTheDayCell.xib */; };
 		D24D4C2C20B7D03200D6C115 /* FromTheEditorsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24D4C2A20B7D03200D6C115 /* FromTheEditorsCell.swift */; };
@@ -27,10 +27,21 @@
 		D24D4C3620B7E85C00D6C115 /* TodaySectionHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D24D4C3420B7E85C00D6C115 /* TodaySectionHeaderCell.xib */; };
 		D24D4C3820B7F23D00D6C115 /* BaseRoundedCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24D4C3720B7F23D00D6C115 /* BaseRoundedCardCell.swift */; };
 		D252A65A20BBF05F00BFCD76 /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D252A65920BBF05F00BFCD76 /* CardDetailViewController.swift */; };
-		D252A65E20BBF66100BFCD76 /* CardDetailTransitioningAnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D252A65D20BBF66100BFCD76 /* CardDetailTransitioningAnimationManager.swift */; };
+		D2974B6020BD1EF8000349B3 /* Date+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2974B5F20BD1EF8000349B3 /* Date+Additions.swift */; };
+		D2C46AFB20BD485B00CF8D46 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C46AF320BD485B00CF8D46 /* NibLoadable.swift */; };
+		D2C46AFC20BD485B00CF8D46 /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C46AF420BD485B00CF8D46 /* NibOwnerLoadable.swift */; };
+		D2C46AFD20BD485B00CF8D46 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C46AF520BD485B00CF8D46 /* Reusable.swift */; };
+		D2C46AFE20BD485B00CF8D46 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C46AF620BD485B00CF8D46 /* UICollectionView+Reusable.swift */; };
+		D2C46AFF20BD485B00CF8D46 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C46AF720BD485B00CF8D46 /* UITableView+Reusable.swift */; };
+		D2C46B0020BD485B00CF8D46 /* StoryboardBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C46AF920BD485B00CF8D46 /* StoryboardBased.swift */; };
+		D2C46B0120BD485B00CF8D46 /* StoryboardSceneBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C46AFA20BD485B00CF8D46 /* StoryboardSceneBased.swift */; };
+		D2C6EFDA20BD2E55009949C8 /* SomeThingNewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6EFD820BD2E55009949C8 /* SomeThingNewCell.swift */; };
+		D2C6EFDB20BD2E55009949C8 /* SomeThingNewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2C6EFD920BD2E55009949C8 /* SomeThingNewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D21A3B5B20BD399100CC5B90 /* SomeThingNewTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeThingNewTableCell.swift; sourceTree = "<group>"; };
+		D21A3B5C20BD399100CC5B90 /* SomeThingNewTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SomeThingNewTableCell.xib; sourceTree = "<group>"; };
 		D24B6FEE20B680F10043A536 /* AppStore Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppStore Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24B6FF120B680F10043A536 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D24B6FF320B680F10043A536 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
@@ -41,8 +52,6 @@
 		D24B700520B68E490043A536 /* TodayViewController+Addtions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodayViewController+Addtions.swift"; sourceTree = "<group>"; };
 		D24B700920B6997C0043A536 /* GetStartedListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedListCell.swift; sourceTree = "<group>"; };
 		D24B700A20B6997C0043A536 /* GetStartedListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GetStartedListCell.xib; sourceTree = "<group>"; };
-		D24B700E20B6A07A0043A536 /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
-		D24B701020B6A0C30043A536 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		D24D4C2620B7B07E00D6C115 /* AppOfTheDayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppOfTheDayCell.swift; sourceTree = "<group>"; };
 		D24D4C2720B7B07E00D6C115 /* AppOfTheDayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppOfTheDayCell.xib; sourceTree = "<group>"; };
 		D24D4C2A20B7D03200D6C115 /* FromTheEditorsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromTheEditorsCell.swift; sourceTree = "<group>"; };
@@ -53,7 +62,16 @@
 		D24D4C3420B7E85C00D6C115 /* TodaySectionHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodaySectionHeaderCell.xib; sourceTree = "<group>"; };
 		D24D4C3720B7F23D00D6C115 /* BaseRoundedCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRoundedCardCell.swift; sourceTree = "<group>"; };
 		D252A65920BBF05F00BFCD76 /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
-		D252A65D20BBF66100BFCD76 /* CardDetailTransitioningAnimationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailTransitioningAnimationManager.swift; sourceTree = "<group>"; };
+		D2974B5F20BD1EF8000349B3 /* Date+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Additions.swift"; sourceTree = "<group>"; };
+		D2C46AF320BD485B00CF8D46 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		D2C46AF420BD485B00CF8D46 /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibOwnerLoadable.swift; sourceTree = "<group>"; };
+		D2C46AF520BD485B00CF8D46 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		D2C46AF620BD485B00CF8D46 /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
+		D2C46AF720BD485B00CF8D46 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		D2C46AF920BD485B00CF8D46 /* StoryboardBased.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardBased.swift; sourceTree = "<group>"; };
+		D2C46AFA20BD485B00CF8D46 /* StoryboardSceneBased.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSceneBased.swift; sourceTree = "<group>"; };
+		D2C6EFD820BD2E55009949C8 /* SomeThingNewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeThingNewCell.swift; sourceTree = "<group>"; };
+		D2C6EFD920BD2E55009949C8 /* SomeThingNewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SomeThingNewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +85,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D21A3B5820BD379400CC5B90 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				D21A3B5F20BD399E00CC5B90 /* UICollectionView */,
+				D21A3B6020BD39A900CC5B90 /* UITableView */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		D21A3B5F20BD399E00CC5B90 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				D24D4C2A20B7D03200D6C115 /* FromTheEditorsCell.swift */,
+				D24D4C2B20B7D03200D6C115 /* FromTheEditorsCell.xib */,
+				D24B700920B6997C0043A536 /* GetStartedListCell.swift */,
+				D24B700A20B6997C0043A536 /* GetStartedListCell.xib */,
+				D24D4C2620B7B07E00D6C115 /* AppOfTheDayCell.swift */,
+				D24D4C2720B7B07E00D6C115 /* AppOfTheDayCell.xib */,
+				D24D4C2E20B7D30C00D6C115 /* WorldPremiereCell.swift */,
+				D24D4C2F20B7D30C00D6C115 /* WorldPremiereCell.xib */,
+				D2C6EFD820BD2E55009949C8 /* SomeThingNewCell.swift */,
+				D2C6EFD920BD2E55009949C8 /* SomeThingNewCell.xib */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		D21A3B6020BD39A900CC5B90 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				D21A3B5B20BD399100CC5B90 /* SomeThingNewTableCell.swift */,
+				D21A3B5C20BD399100CC5B90 /* SomeThingNewTableCell.xib */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
 		D24B6FE520B680F10043A536 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +139,7 @@
 		D24B6FF020B680F10043A536 /* AppStore Clone */ = {
 			isa = PBXGroup;
 			children = (
+				D2974B5C20BD1B8F000349B3 /* Models */,
 				D24B700320B68D420043A536 /* Controllers */,
 				D24B700820B698320043A536 /* Views */,
 				D24B700D20B6A05F0043A536 /* Helpers */,
@@ -129,8 +183,8 @@
 		D24B700D20B6A05F0043A536 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				D252A65C20BBF62D00BFCD76 /* UICollectionView+Reusable */,
-				D252A65D20BBF66100BFCD76 /* CardDetailTransitioningAnimationManager.swift */,
+				D2C46AEF20BD484900CF8D46 /* Reusable */,
+				D2974B5F20BD1EF8000349B3 /* Date+Additions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -139,14 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				D24D4C3720B7F23D00D6C115 /* BaseRoundedCardCell.swift */,
-				D24D4C2A20B7D03200D6C115 /* FromTheEditorsCell.swift */,
-				D24D4C2B20B7D03200D6C115 /* FromTheEditorsCell.xib */,
-				D24B700920B6997C0043A536 /* GetStartedListCell.swift */,
-				D24B700A20B6997C0043A536 /* GetStartedListCell.xib */,
-				D24D4C2620B7B07E00D6C115 /* AppOfTheDayCell.swift */,
-				D24D4C2720B7B07E00D6C115 /* AppOfTheDayCell.xib */,
-				D24D4C2E20B7D30C00D6C115 /* WorldPremiereCell.swift */,
-				D24D4C2F20B7D30C00D6C115 /* WorldPremiereCell.xib */,
+				D21A3B5820BD379400CC5B90 /* Today */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -159,13 +206,43 @@
 			path = CardDetail;
 			sourceTree = "<group>";
 		};
-		D252A65C20BBF62D00BFCD76 /* UICollectionView+Reusable */ = {
+		D2974B5C20BD1B8F000349B3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D24B701020B6A0C30043A536 /* Reusable.swift */,
-				D24B700E20B6A07A0043A536 /* UICollectionView+Reusable.swift */,
 			);
-			path = "UICollectionView+Reusable";
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D2C46AEF20BD484900CF8D46 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				D2C46AF820BD485B00CF8D46 /* Storyboard */,
+				D2C46AF220BD485B00CF8D46 /* View */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		D2C46AF220BD485B00CF8D46 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2C46AF320BD485B00CF8D46 /* NibLoadable.swift */,
+				D2C46AF420BD485B00CF8D46 /* NibOwnerLoadable.swift */,
+				D2C46AF520BD485B00CF8D46 /* Reusable.swift */,
+				D2C46AF620BD485B00CF8D46 /* UICollectionView+Reusable.swift */,
+				D2C46AF720BD485B00CF8D46 /* UITableView+Reusable.swift */,
+			);
+			name = View;
+			path = ../../../../../Sample/Reusable/Sources/View;
+			sourceTree = "<group>";
+		};
+		D2C46AF820BD485B00CF8D46 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D2C46AF920BD485B00CF8D46 /* StoryboardBased.swift */,
+				D2C46AFA20BD485B00CF8D46 /* StoryboardSceneBased.swift */,
+			);
+			name = Storyboard;
+			path = ../../../../../Sample/Reusable/Sources/Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +304,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D24D4C2920B7B07E00D6C115 /* AppOfTheDayCell.xib in Resources */,
+				D21A3B5E20BD399100CC5B90 /* SomeThingNewTableCell.xib in Resources */,
+				D2C6EFDB20BD2E55009949C8 /* SomeThingNewCell.xib in Resources */,
 				D24B6FFC20B680F20043A536 /* LaunchScreen.storyboard in Resources */,
 				D24D4C3620B7E85C00D6C115 /* TodaySectionHeaderCell.xib in Resources */,
 				D24B6FF920B680F20043A536 /* Assets.xcassets in Resources */,
@@ -244,14 +323,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D24B701120B6A0C30043A536 /* Reusable.swift in Sources */,
+				D2C6EFDA20BD2E55009949C8 /* SomeThingNewCell.swift in Sources */,
+				D2C46AFF20BD485B00CF8D46 /* UITableView+Reusable.swift in Sources */,
+				D2C46B0120BD485B00CF8D46 /* StoryboardSceneBased.swift in Sources */,
 				D252A65A20BBF05F00BFCD76 /* CardDetailViewController.swift in Sources */,
-				D252A65E20BBF66100BFCD76 /* CardDetailTransitioningAnimationManager.swift in Sources */,
+				D2C46AFB20BD485B00CF8D46 /* NibLoadable.swift in Sources */,
 				D24B700620B68E490043A536 /* TodayViewController+Addtions.swift in Sources */,
 				D24D4C3020B7D30C00D6C115 /* WorldPremiereCell.swift in Sources */,
+				D2C46B0020BD485B00CF8D46 /* StoryboardBased.swift in Sources */,
 				D24D4C2C20B7D03200D6C115 /* FromTheEditorsCell.swift in Sources */,
-				D24B700F20B6A07A0043A536 /* UICollectionView+Reusable.swift in Sources */,
+				D2C46AFC20BD485B00CF8D46 /* NibOwnerLoadable.swift in Sources */,
+				D2C46AFD20BD485B00CF8D46 /* Reusable.swift in Sources */,
+				D21A3B5D20BD399100CC5B90 /* SomeThingNewTableCell.swift in Sources */,
 				D24D4C3820B7F23D00D6C115 /* BaseRoundedCardCell.swift in Sources */,
+				D2C46AFE20BD485B00CF8D46 /* UICollectionView+Reusable.swift in Sources */,
+				D2974B6020BD1EF8000349B3 /* Date+Additions.swift in Sources */,
 				D24B6FF420B680F10043A536 /* TodayViewController.swift in Sources */,
 				D24D4C3520B7E85C00D6C115 /* TodaySectionHeaderCell.swift in Sources */,
 				D24B6FF220B680F10043A536 /* AppDelegate.swift in Sources */,

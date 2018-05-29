@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SomeThingNewTableCell" customModule="AppStore_Clone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MHW-icon-App-60x60" translatesAutoresizingMaskIntoConstraints="NO" id="bC0-1N-aPF">
+                        <rect key="frame" x="8" y="8" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="bC0-1N-aPF" secondAttribute="height" multiplier="1:1" id="QAG-uB-9lH"/>
+                            <constraint firstAttribute="height" constant="44" id="iik-ui-tzt"/>
+                            <constraint firstAttribute="width" constant="44" id="q8s-of-nz1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monster Hunter Notes : World" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AwA-0t-utY">
+                        <rect key="frame" x="60" y="8" width="184" height="33.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1x-Ef-YNm">
+                        <rect key="frame" x="252" y="20" width="60" height="20"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="jf6-FU-kuw"/>
+                            <constraint firstAttribute="width" constant="60" id="vNx-ZG-cIt"/>
+                        </constraints>
+                        <state key="normal" title="GET"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Useful notes for hunters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEk-pb-5Tm">
+                        <rect key="frame" x="60" y="41.5" width="184" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In-App Purchases" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UkV-ec-nRd">
+                        <rect key="frame" x="252" y="44" width="60" height="8"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="8" id="rhE-aS-oMp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="6"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bC0-1N-aPF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="1CH-An-hsw"/>
+                    <constraint firstItem="AwA-0t-utY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="HP7-1c-2RX"/>
+                    <constraint firstItem="AwA-0t-utY" firstAttribute="leading" secondItem="bC0-1N-aPF" secondAttribute="trailing" constant="8" id="Ijz-yo-Urn"/>
+                    <constraint firstItem="V1x-Ef-YNm" firstAttribute="leading" secondItem="DEk-pb-5Tm" secondAttribute="trailing" constant="8" id="MsA-8c-TGw"/>
+                    <constraint firstItem="UkV-ec-nRd" firstAttribute="top" secondItem="V1x-Ef-YNm" secondAttribute="bottom" constant="4" id="Q55-YQ-qe5"/>
+                    <constraint firstItem="UkV-ec-nRd" firstAttribute="width" secondItem="V1x-Ef-YNm" secondAttribute="width" id="Ycf-gk-LNZ"/>
+                    <constraint firstItem="UkV-ec-nRd" firstAttribute="centerX" secondItem="V1x-Ef-YNm" secondAttribute="centerX" id="eU9-4S-WJ2"/>
+                    <constraint firstItem="V1x-Ef-YNm" firstAttribute="centerY" secondItem="bC0-1N-aPF" secondAttribute="centerY" id="fO8-n0-J3H"/>
+                    <constraint firstItem="V1x-Ef-YNm" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="8" id="kQl-83-cUQ"/>
+                    <constraint firstItem="DEk-pb-5Tm" firstAttribute="top" secondItem="AwA-0t-utY" secondAttribute="bottom" id="nx2-pS-vSp"/>
+                    <constraint firstItem="V1x-Ef-YNm" firstAttribute="leading" secondItem="AwA-0t-utY" secondAttribute="trailing" constant="8" id="sRn-iY-JhM"/>
+                    <constraint firstItem="bC0-1N-aPF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="yRC-gI-ggV"/>
+                    <constraint firstItem="DEk-pb-5Tm" firstAttribute="leading" secondItem="bC0-1N-aPF" secondAttribute="trailing" constant="8" id="yun-nx-kcH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="uiBtnGetApp" destination="V1x-Ef-YNm" id="rf4-9e-AUO"/>
+                <outlet property="uiImgViewAppIcon" destination="bC0-1N-aPF" id="46Y-2E-AxP"/>
+                <outlet property="uiLblAppDescription" destination="DEk-pb-5Tm" id="nVh-1Q-lY0"/>
+                <outlet property="uiLblAppName" destination="AwA-0t-utY" id="lS1-RC-HW8"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="MHW-icon-App-60x60" width="60" height="60"/>
+    </resources>
+</document>

@@ -14,16 +14,7 @@ class TodayViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         /// configure(Initialize) collectionView 
         configure(collectionView: uiCollectionViewTodayList)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
-

@@ -78,7 +78,7 @@ extension BaseRoundedCardCell {
         
         // Roll/Pitch Dynamic Shadow
         if motionManager.isDeviceMotionAvailable {
-            motionManager.deviceMotionUpdateInterval = 0.02
+            motionManager.deviceMotionUpdateInterval = 0.005
             motionManager.startDeviceMotionUpdates(to: .main, withHandler: { (motion, error) in
                 if let motion = motion {
                     let pitch = motion.attitude.pitch * 5 // x-axis

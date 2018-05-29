@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SomeThingNewCell" customModule="AppStore_Clone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="358"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="330" height="358"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N2y-Dz-yat">
+                        <rect key="frame" x="20" y="20" width="290" height="318"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" bouncesZoom="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nOk-Wd-wmq">
+                                <rect key="frame" x="16" y="94.5" width="258" height="215.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHATS NEW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vrb-3g-3gg">
+                                <rect key="frame" x="16" y="16" width="258" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irC-7P-Idw">
+                                <rect key="frame" x="16" y="33" width="258" height="53"/>
+                                <string key="text">Discover some
+funny things</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="irC-7P-Idw" secondAttribute="trailing" constant="16" id="5u0-ZL-Z9e"/>
+                            <constraint firstItem="nOk-Wd-wmq" firstAttribute="leading" secondItem="N2y-Dz-yat" secondAttribute="leading" constant="16" id="IfN-kh-NhA"/>
+                            <constraint firstItem="nOk-Wd-wmq" firstAttribute="top" secondItem="irC-7P-Idw" secondAttribute="bottom" constant="8" id="J7S-xd-RwE"/>
+                            <constraint firstItem="irC-7P-Idw" firstAttribute="top" secondItem="Vrb-3g-3gg" secondAttribute="bottom" id="Rw7-Db-k1J"/>
+                            <constraint firstItem="Vrb-3g-3gg" firstAttribute="leading" secondItem="N2y-Dz-yat" secondAttribute="leading" constant="16" id="gAV-9h-Hhj"/>
+                            <constraint firstItem="Vrb-3g-3gg" firstAttribute="top" secondItem="N2y-Dz-yat" secondAttribute="top" constant="16" id="i1E-V5-sLd"/>
+                            <constraint firstItem="irC-7P-Idw" firstAttribute="leading" secondItem="N2y-Dz-yat" secondAttribute="leading" constant="16" id="iII-va-02S"/>
+                            <constraint firstAttribute="trailing" secondItem="Vrb-3g-3gg" secondAttribute="trailing" constant="16" id="lS6-Gd-2Xu"/>
+                            <constraint firstAttribute="bottom" secondItem="nOk-Wd-wmq" secondAttribute="bottom" constant="8" id="mnR-7I-ZMJ"/>
+                            <constraint firstAttribute="trailing" secondItem="nOk-Wd-wmq" secondAttribute="trailing" constant="16" id="tg3-PR-fB3"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="N2y-Dz-yat" secondAttribute="bottom" constant="20" id="OAT-gb-enL"/>
+                <constraint firstItem="N2y-Dz-yat" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="d1V-Oh-j0G"/>
+                <constraint firstItem="N2y-Dz-yat" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="qrY-vZ-qbg"/>
+                <constraint firstAttribute="trailing" secondItem="N2y-Dz-yat" secondAttribute="trailing" constant="20" id="vAk-kB-2YS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="uiTableViewSomeThingNewList" destination="nOk-Wd-wmq" id="5II-yG-c68"/>
+                <outlet property="uiViewBackGround" destination="N2y-Dz-yat" id="hPc-kT-ulZ"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

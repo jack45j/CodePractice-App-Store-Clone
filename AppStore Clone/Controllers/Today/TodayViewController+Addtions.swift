@@ -8,60 +8,66 @@
 
 import UIKit
 
-extension TodayViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+extension TodayViewController {
     
     /// MARK - Configuration
     
     internal func configure(collectionView: UICollectionView) {
-        /// register some reusable cell here
-        /// ex:
-        /// collectionView.registerReusableCell(WorldPremiereCell.self)
-        collectionView.registerReusableCell(GetStartedListCell.self)
-        collectionView.registerReusableCell(AppOfTheDayCell.self)
-        collectionView.registerReusableCell(FromTheEditorsCell.self)
-        collectionView.registerReusableCell(WorldPremiereCell.self)
-        collectionView.registerSupplementaryView(TodaySectionHeaderCell.self, kind: UICollectionElementKindSectionHeader)
+        collectionView.register(cellType: GetStartedListCell.self)
+        collectionView.register(cellType: AppOfTheDayCell.self)
+        collectionView.register(cellType: FromTheEditorsCell.self)
+        collectionView.register(cellType: WorldPremiereCell.self)
+        collectionView.register(cellType: SomeThingNewCell.self)
+        collectionView.register(supplementaryViewType: TodaySectionHeaderCell.self, ofKind: UICollectionElementKindSectionHeader)
+//        collectionView.register(supplementaryViewType: TodaySectionHeaderCell.self, ofKind: UICollectionElementKindSectionHeader)
         
         collectionView.dataSource = self
         collectionView.delegate = self
     }
-    
+}
+
+
+
+extension TodayViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     /// MARK: UICollectionViewDelegate
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "segueToDetailVC", sender: self)
+        /// present to detail viewcontroller
+        /// do something here
     }
     
     
     /// MARK: UICollectionViewDataSource
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 3
+        return 7
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         switch indexPath.row {
         case 0:
-            /// return any cell you want
-            /// ex:
-            /// return WorldPremiereCell.dequeque(fromCollectionView: collectionView, atIndexPath: indexPath)
-            return FromTheEditorsCell.dequeue(fromCollectionView: collectionView, atIndexPath: indexPath)
+            return collectionView.dequeueReusableCell(for: indexPath) as WorldPremiereCell
         case 1:
-            return WorldPremiereCell.dequeue(fromCollectionView: collectionView, atIndexPath: indexPath)
+            return collectionView.dequeueReusableCell(for: indexPath) as GetStartedListCell
         case 2:
-            return AppOfTheDayCell.dequeue(fromCollectionView: collectionView, atIndexPath: indexPath)
+            return collectionView.dequeueReusableCell(for: indexPath) as AppOfTheDayCell
+        case 3:
+            return collectionView.dequeueReusableCell(for: indexPath) as FromTheEditorsCell
+        case 4:
+            return collectionView.dequeueReusableCell(for: indexPath) as SomeThingNewCell
         default:
-            /// return default cell
-            /// ex:
-            return GetStartedListCell.dequeue(fromCollectionView: collectionView, atIndexPath: indexPath)
+            return collectionView.dequeueReusableCell(for: indexPath) as GetStartedListCell
         }
     }
-    
+}
+
+
+extension TodayViewController: UICollectionViewDelegateFlowLayout {
     
     /// MARK: - UICollectionViewDelegateFlowLayout
     
@@ -72,9 +78,13 @@ extension TodayViewController: UICollectionViewDataSource, UICollectionViewDeleg
         return CGSize(width: collectionView.bounds.width, height: TodaySectionHeaderCell.ViewHeight)
     }
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let sectionHeader = TodaySectionHeaderCell.dequeue(fromCollectionView: collectionView, ofKind: kind, atIndexPath: indexPath)
+        let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, for: indexPath) as TodaySectionHeaderCell
         sectionHeader.shouldShowProfileImage = (indexPath.section == 0)
+        sectionHeader.updateDateLabel(index: indexPath.section)
+        
         
         return sectionHeader
     }
 }
+
+

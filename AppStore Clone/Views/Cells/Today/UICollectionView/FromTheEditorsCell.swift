@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FromTheEditorsCell: BaseRoundedCardCell {
+class FromTheEditorsCell: BaseRoundedCardCell, NibReusable {
     
     /// BackGround View
     @IBOutlet private weak var uiViewBackGround: UIView!
@@ -16,13 +16,6 @@ class FromTheEditorsCell: BaseRoundedCardCell {
     /// Image View
     @IBOutlet private weak var uiImgViewFromTheEditors: UIImageView!
     
-    /// MARK - Factory Method
-    internal static func dequeue(fromCollectionView collectionView:UICollectionView, atIndexPath indexPath: IndexPath) -> FromTheEditorsCell {
-        guard let cell: FromTheEditorsCell = collectionView.dequeueReusableCell(indexPath: indexPath) else {
-            fatalError("Failed to dequeue AppOfTheDayCell")
-        }
-        return cell
-    }
 
     override func awakeFromNib() {
         super.awakeFromNib()

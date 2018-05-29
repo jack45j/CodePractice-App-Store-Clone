@@ -8,21 +8,14 @@
 
 import UIKit
 
-class WorldPremiereCell: BaseRoundedCardCell {
+class WorldPremiereCell: BaseRoundedCardCell, NibReusable {
     
     /// BackGround View
     @IBOutlet private weak var uiViewBackGround: UIView!
     
     /// Image View
     @IBOutlet private weak var uiImgViewWorldPremiere: UIImageView!
-
-    /// MARK - Factory Method
-    internal static func dequeue(fromCollectionView collectionView:UICollectionView, atIndexPath indexPath: IndexPath) -> WorldPremiereCell {
-        guard let cell: WorldPremiereCell = collectionView.dequeueReusableCell(indexPath: indexPath) else {
-            fatalError("Failed to dequeue AppOfTheDayCell")
-        }
-        return cell
-    }
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
