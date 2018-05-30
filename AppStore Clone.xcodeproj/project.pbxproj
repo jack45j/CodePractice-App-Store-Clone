@@ -27,6 +27,14 @@
 		D24D4C3620B7E85C00D6C115 /* TodaySectionHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D24D4C3420B7E85C00D6C115 /* TodaySectionHeaderCell.xib */; };
 		D24D4C3820B7F23D00D6C115 /* BaseRoundedCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24D4C3720B7F23D00D6C115 /* BaseRoundedCardCell.swift */; };
 		D252A65A20BBF05F00BFCD76 /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D252A65920BBF05F00BFCD76 /* CardDetailViewController.swift */; };
+		D25B018F20BE8E03003C0886 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25B018E20BE8E03003C0886 /* GamesViewController.swift */; };
+		D25B019220BE8E71003C0886 /* GamesViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25B019120BE8E71003C0886 /* GamesViewController+Additions.swift */; };
+		D25B019520BE8F82003C0886 /* LimitedTimeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25B019320BE8F82003C0886 /* LimitedTimeTableCell.swift */; };
+		D25B019620BE8F82003C0886 /* LimitedTimeTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D25B019420BE8F82003C0886 /* LimitedTimeTableCell.xib */; };
+		D25B019A20BE9727003C0886 /* GamesSliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25B019820BE9727003C0886 /* GamesSliderCollectionViewCell.swift */; };
+		D25B019B20BE9727003C0886 /* GamesSliderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D25B019920BE9727003C0886 /* GamesSliderCollectionViewCell.xib */; };
+		D25B01A020BEA3BA003C0886 /* GamesSectionHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25B019E20BEA3BA003C0886 /* GamesSectionHeaderTableViewCell.swift */; };
+		D25B01A120BEA3BA003C0886 /* GamesSectionHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D25B019F20BEA3BA003C0886 /* GamesSectionHeaderTableViewCell.xib */; };
 		D2974B6020BD1EF8000349B3 /* Date+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2974B5F20BD1EF8000349B3 /* Date+Additions.swift */; };
 		D2C46AFB20BD485B00CF8D46 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C46AF320BD485B00CF8D46 /* NibLoadable.swift */; };
 		D2C46AFC20BD485B00CF8D46 /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C46AF420BD485B00CF8D46 /* NibOwnerLoadable.swift */; };
@@ -62,6 +70,14 @@
 		D24D4C3420B7E85C00D6C115 /* TodaySectionHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodaySectionHeaderCell.xib; sourceTree = "<group>"; };
 		D24D4C3720B7F23D00D6C115 /* BaseRoundedCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRoundedCardCell.swift; sourceTree = "<group>"; };
 		D252A65920BBF05F00BFCD76 /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
+		D25B018E20BE8E03003C0886 /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
+		D25B019120BE8E71003C0886 /* GamesViewController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GamesViewController+Additions.swift"; sourceTree = "<group>"; };
+		D25B019320BE8F82003C0886 /* LimitedTimeTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitedTimeTableCell.swift; sourceTree = "<group>"; };
+		D25B019420BE8F82003C0886 /* LimitedTimeTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LimitedTimeTableCell.xib; sourceTree = "<group>"; };
+		D25B019820BE9727003C0886 /* GamesSliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesSliderCollectionViewCell.swift; sourceTree = "<group>"; };
+		D25B019920BE9727003C0886 /* GamesSliderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GamesSliderCollectionViewCell.xib; sourceTree = "<group>"; };
+		D25B019E20BEA3BA003C0886 /* GamesSectionHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesSectionHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		D25B019F20BEA3BA003C0886 /* GamesSectionHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GamesSectionHeaderTableViewCell.xib; sourceTree = "<group>"; };
 		D2974B5F20BD1EF8000349B3 /* Date+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Additions.swift"; sourceTree = "<group>"; };
 		D2C46AF320BD485B00CF8D46 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		D2C46AF420BD485B00CF8D46 /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibOwnerLoadable.swift; sourceTree = "<group>"; };
@@ -97,6 +113,8 @@
 		D21A3B5F20BD399E00CC5B90 /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				D24D4C3320B7E85C00D6C115 /* TodaySectionHeaderCell.swift */,
+				D24D4C3420B7E85C00D6C115 /* TodaySectionHeaderCell.xib */,
 				D24D4C2A20B7D03200D6C115 /* FromTheEditorsCell.swift */,
 				D24D4C2B20B7D03200D6C115 /* FromTheEditorsCell.xib */,
 				D24B700920B6997C0043A536 /* GetStartedListCell.swift */,
@@ -157,6 +175,7 @@
 			children = (
 				D24B700420B68D7E0043A536 /* Today */,
 				D252A65B20BBF06900BFCD76 /* CardDetail */,
+				D25B019020BE8E07003C0886 /* Games */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -173,8 +192,6 @@
 		D24B700820B698320043A536 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D24D4C3320B7E85C00D6C115 /* TodaySectionHeaderCell.swift */,
-				D24D4C3420B7E85C00D6C115 /* TodaySectionHeaderCell.xib */,
 				D24D4C3220B7E82D00D6C115 /* Cells */,
 			);
 			path = Views;
@@ -194,6 +211,7 @@
 			children = (
 				D24D4C3720B7F23D00D6C115 /* BaseRoundedCardCell.swift */,
 				D21A3B5820BD379400CC5B90 /* Today */,
+				D25B019720BE8F98003C0886 /* Games */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -204,6 +222,44 @@
 				D252A65920BBF05F00BFCD76 /* CardDetailViewController.swift */,
 			);
 			path = CardDetail;
+			sourceTree = "<group>";
+		};
+		D25B019020BE8E07003C0886 /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				D25B018E20BE8E03003C0886 /* GamesViewController.swift */,
+				D25B019120BE8E71003C0886 /* GamesViewController+Additions.swift */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		D25B019720BE8F98003C0886 /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				D25B019C20BEA375003C0886 /* UITableView */,
+				D25B019D20BEA37E003C0886 /* UICollectionView */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		D25B019C20BEA375003C0886 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				D25B019320BE8F82003C0886 /* LimitedTimeTableCell.swift */,
+				D25B019420BE8F82003C0886 /* LimitedTimeTableCell.xib */,
+				D25B019E20BEA3BA003C0886 /* GamesSectionHeaderTableViewCell.swift */,
+				D25B019F20BEA3BA003C0886 /* GamesSectionHeaderTableViewCell.xib */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		D25B019D20BEA37E003C0886 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				D25B019820BE9727003C0886 /* GamesSliderCollectionViewCell.swift */,
+				D25B019920BE9727003C0886 /* GamesSliderCollectionViewCell.xib */,
+			);
+			path = UICollectionView;
 			sourceTree = "<group>";
 		};
 		D2974B5C20BD1B8F000349B3 /* Models */ = {
@@ -304,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D24D4C2920B7B07E00D6C115 /* AppOfTheDayCell.xib in Resources */,
+				D25B019620BE8F82003C0886 /* LimitedTimeTableCell.xib in Resources */,
 				D21A3B5E20BD399100CC5B90 /* SomeThingNewTableCell.xib in Resources */,
 				D2C6EFDB20BD2E55009949C8 /* SomeThingNewCell.xib in Resources */,
 				D24B6FFC20B680F20043A536 /* LaunchScreen.storyboard in Resources */,
@@ -312,7 +369,9 @@
 				D24B6FF720B680F10043A536 /* Main.storyboard in Resources */,
 				D24D4C3120B7D30C00D6C115 /* WorldPremiereCell.xib in Resources */,
 				D24D4C2D20B7D03200D6C115 /* FromTheEditorsCell.xib in Resources */,
+				D25B01A120BEA3BA003C0886 /* GamesSectionHeaderTableViewCell.xib in Resources */,
 				D24B700C20B6997C0043A536 /* GetStartedListCell.xib in Resources */,
+				D25B019B20BE9727003C0886 /* GamesSliderCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D25B01A020BEA3BA003C0886 /* GamesSectionHeaderTableViewCell.swift in Sources */,
 				D2C6EFDA20BD2E55009949C8 /* SomeThingNewCell.swift in Sources */,
 				D2C46AFF20BD485B00CF8D46 /* UITableView+Reusable.swift in Sources */,
 				D2C46B0120BD485B00CF8D46 /* StoryboardSceneBased.swift in Sources */,
@@ -330,6 +390,9 @@
 				D2C46AFB20BD485B00CF8D46 /* NibLoadable.swift in Sources */,
 				D24B700620B68E490043A536 /* TodayViewController+Addtions.swift in Sources */,
 				D24D4C3020B7D30C00D6C115 /* WorldPremiereCell.swift in Sources */,
+				D25B019520BE8F82003C0886 /* LimitedTimeTableCell.swift in Sources */,
+				D25B018F20BE8E03003C0886 /* GamesViewController.swift in Sources */,
+				D25B019220BE8E71003C0886 /* GamesViewController+Additions.swift in Sources */,
 				D2C46B0020BD485B00CF8D46 /* StoryboardBased.swift in Sources */,
 				D24D4C2C20B7D03200D6C115 /* FromTheEditorsCell.swift in Sources */,
 				D2C46AFC20BD485B00CF8D46 /* NibOwnerLoadable.swift in Sources */,
@@ -341,6 +404,7 @@
 				D24B6FF420B680F10043A536 /* TodayViewController.swift in Sources */,
 				D24D4C3520B7E85C00D6C115 /* TodaySectionHeaderCell.swift in Sources */,
 				D24B6FF220B680F10043A536 /* AppDelegate.swift in Sources */,
+				D25B019A20BE9727003C0886 /* GamesSliderCollectionViewCell.swift in Sources */,
 				D24D4C2820B7B07E00D6C115 /* AppOfTheDayCell.swift in Sources */,
 				D24B700B20B6997C0043A536 /* GetStartedListCell.swift in Sources */,
 			);
