@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GamesSectionHeaderCell" customModule="AppStore_Clone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="520" height="75"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="520" height="75"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CXM-oM-fV3">
+                        <rect key="frame" x="0.0" y="0.0" width="520" height="75"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Games" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0F-Zs-B5D">
+                                <rect key="frame" x="16" y="25.5" width="117.5" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="PTJ-WA-GTx">
+                                <rect key="frame" x="464" y="28.5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="MMr-fY-9aa"/>
+                                    <constraint firstAttribute="width" secondItem="PTJ-WA-GTx" secondAttribute="height" multiplier="1:1" id="sZT-76-ZOW"/>
+                                    <constraint firstAttribute="height" constant="40" id="yXg-QC-qot"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="x0F-Zs-B5D" secondAttribute="bottom" constant="6.5" id="DuV-iJ-iQg"/>
+                            <constraint firstItem="x0F-Zs-B5D" firstAttribute="leading" secondItem="CXM-oM-fV3" secondAttribute="leading" constant="16" id="L8l-qC-9wW"/>
+                            <constraint firstAttribute="trailing" secondItem="PTJ-WA-GTx" secondAttribute="trailing" constant="16" id="VwX-BA-eBz"/>
+                            <constraint firstItem="PTJ-WA-GTx" firstAttribute="bottom" secondItem="x0F-Zs-B5D" secondAttribute="bottom" id="Xfa-bW-tyf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="CXM-oM-fV3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="VSn-O5-RH6"/>
+                <constraint firstItem="CXM-oM-fV3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Yx2-LB-7aw"/>
+                <constraint firstAttribute="bottom" secondItem="CXM-oM-fV3" secondAttribute="bottom" id="aSD-TF-PB2"/>
+                <constraint firstAttribute="trailing" secondItem="CXM-oM-fV3" secondAttribute="trailing" id="hfe-DD-BkJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="520" height="75"/>
+            <connections>
+                <outlet property="uiImgViewProfile" destination="PTJ-WA-GTx" id="Wjd-6P-5Jn"/>
+            </connections>
+            <point key="canvasLocation" x="127" y="41.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="profile" width="100" height="150"/>
+    </resources>
+</document>

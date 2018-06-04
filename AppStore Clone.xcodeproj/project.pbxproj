@@ -29,12 +29,12 @@
 		D252A65A20BBF05F00BFCD76 /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D252A65920BBF05F00BFCD76 /* CardDetailViewController.swift */; };
 		D25B018F20BE8E03003C0886 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25B018E20BE8E03003C0886 /* GamesViewController.swift */; };
 		D25B019220BE8E71003C0886 /* GamesViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25B019120BE8E71003C0886 /* GamesViewController+Additions.swift */; };
-		D25B019520BE8F82003C0886 /* LimitedTimeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25B019320BE8F82003C0886 /* LimitedTimeTableCell.swift */; };
-		D25B019620BE8F82003C0886 /* LimitedTimeTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D25B019420BE8F82003C0886 /* LimitedTimeTableCell.xib */; };
 		D25B019A20BE9727003C0886 /* GamesSliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25B019820BE9727003C0886 /* GamesSliderCollectionViewCell.swift */; };
 		D25B019B20BE9727003C0886 /* GamesSliderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D25B019920BE9727003C0886 /* GamesSliderCollectionViewCell.xib */; };
-		D25B01A020BEA3BA003C0886 /* GamesSectionHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25B019E20BEA3BA003C0886 /* GamesSectionHeaderTableViewCell.swift */; };
-		D25B01A120BEA3BA003C0886 /* GamesSectionHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D25B019F20BEA3BA003C0886 /* GamesSectionHeaderTableViewCell.xib */; };
+		D25B997520C5274C003E3E6F /* SliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25B997320C5274C003E3E6F /* SliderCollectionViewCell.swift */; };
+		D25B997620C5274C003E3E6F /* SliderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D25B997420C5274C003E3E6F /* SliderCollectionViewCell.xib */; };
+		D25B997920C53678003E3E6F /* GamesSectionHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25B997720C53678003E3E6F /* GamesSectionHeaderCell.swift */; };
+		D25B997A20C53678003E3E6F /* GamesSectionHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D25B997820C53678003E3E6F /* GamesSectionHeaderCell.xib */; };
 		D2974B6020BD1EF8000349B3 /* Date+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2974B5F20BD1EF8000349B3 /* Date+Additions.swift */; };
 		D2C46AFB20BD485B00CF8D46 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C46AF320BD485B00CF8D46 /* NibLoadable.swift */; };
 		D2C46AFC20BD485B00CF8D46 /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C46AF420BD485B00CF8D46 /* NibOwnerLoadable.swift */; };
@@ -72,12 +72,12 @@
 		D252A65920BBF05F00BFCD76 /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
 		D25B018E20BE8E03003C0886 /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
 		D25B019120BE8E71003C0886 /* GamesViewController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GamesViewController+Additions.swift"; sourceTree = "<group>"; };
-		D25B019320BE8F82003C0886 /* LimitedTimeTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitedTimeTableCell.swift; sourceTree = "<group>"; };
-		D25B019420BE8F82003C0886 /* LimitedTimeTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LimitedTimeTableCell.xib; sourceTree = "<group>"; };
 		D25B019820BE9727003C0886 /* GamesSliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesSliderCollectionViewCell.swift; sourceTree = "<group>"; };
 		D25B019920BE9727003C0886 /* GamesSliderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GamesSliderCollectionViewCell.xib; sourceTree = "<group>"; };
-		D25B019E20BEA3BA003C0886 /* GamesSectionHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesSectionHeaderTableViewCell.swift; sourceTree = "<group>"; };
-		D25B019F20BEA3BA003C0886 /* GamesSectionHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GamesSectionHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		D25B997320C5274C003E3E6F /* SliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCollectionViewCell.swift; sourceTree = "<group>"; };
+		D25B997420C5274C003E3E6F /* SliderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderCollectionViewCell.xib; sourceTree = "<group>"; };
+		D25B997720C53678003E3E6F /* GamesSectionHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesSectionHeaderCell.swift; sourceTree = "<group>"; };
+		D25B997820C53678003E3E6F /* GamesSectionHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GamesSectionHeaderCell.xib; sourceTree = "<group>"; };
 		D2974B5F20BD1EF8000349B3 /* Date+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Additions.swift"; sourceTree = "<group>"; };
 		D2C46AF320BD485B00CF8D46 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		D2C46AF420BD485B00CF8D46 /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibOwnerLoadable.swift; sourceTree = "<group>"; };
@@ -236,28 +236,20 @@
 		D25B019720BE8F98003C0886 /* Games */ = {
 			isa = PBXGroup;
 			children = (
-				D25B019C20BEA375003C0886 /* UITableView */,
 				D25B019D20BEA37E003C0886 /* UICollectionView */,
 			);
 			path = Games;
 			sourceTree = "<group>";
 		};
-		D25B019C20BEA375003C0886 /* UITableView */ = {
-			isa = PBXGroup;
-			children = (
-				D25B019320BE8F82003C0886 /* LimitedTimeTableCell.swift */,
-				D25B019420BE8F82003C0886 /* LimitedTimeTableCell.xib */,
-				D25B019E20BEA3BA003C0886 /* GamesSectionHeaderTableViewCell.swift */,
-				D25B019F20BEA3BA003C0886 /* GamesSectionHeaderTableViewCell.xib */,
-			);
-			path = UITableView;
-			sourceTree = "<group>";
-		};
 		D25B019D20BEA37E003C0886 /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				D25B997720C53678003E3E6F /* GamesSectionHeaderCell.swift */,
+				D25B997820C53678003E3E6F /* GamesSectionHeaderCell.xib */,
 				D25B019820BE9727003C0886 /* GamesSliderCollectionViewCell.swift */,
 				D25B019920BE9727003C0886 /* GamesSliderCollectionViewCell.xib */,
+				D25B997320C5274C003E3E6F /* SliderCollectionViewCell.swift */,
+				D25B997420C5274C003E3E6F /* SliderCollectionViewCell.xib */,
 			);
 			path = UICollectionView;
 			sourceTree = "<group>";
@@ -360,18 +352,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D24D4C2920B7B07E00D6C115 /* AppOfTheDayCell.xib in Resources */,
-				D25B019620BE8F82003C0886 /* LimitedTimeTableCell.xib in Resources */,
 				D21A3B5E20BD399100CC5B90 /* SomeThingNewTableCell.xib in Resources */,
 				D2C6EFDB20BD2E55009949C8 /* SomeThingNewCell.xib in Resources */,
 				D24B6FFC20B680F20043A536 /* LaunchScreen.storyboard in Resources */,
 				D24D4C3620B7E85C00D6C115 /* TodaySectionHeaderCell.xib in Resources */,
 				D24B6FF920B680F20043A536 /* Assets.xcassets in Resources */,
 				D24B6FF720B680F10043A536 /* Main.storyboard in Resources */,
+				D25B997A20C53678003E3E6F /* GamesSectionHeaderCell.xib in Resources */,
 				D24D4C3120B7D30C00D6C115 /* WorldPremiereCell.xib in Resources */,
 				D24D4C2D20B7D03200D6C115 /* FromTheEditorsCell.xib in Resources */,
-				D25B01A120BEA3BA003C0886 /* GamesSectionHeaderTableViewCell.xib in Resources */,
 				D24B700C20B6997C0043A536 /* GetStartedListCell.xib in Resources */,
 				D25B019B20BE9727003C0886 /* GamesSliderCollectionViewCell.xib in Resources */,
+				D25B997620C5274C003E3E6F /* SliderCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,19 +374,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D25B01A020BEA3BA003C0886 /* GamesSectionHeaderTableViewCell.swift in Sources */,
 				D2C6EFDA20BD2E55009949C8 /* SomeThingNewCell.swift in Sources */,
 				D2C46AFF20BD485B00CF8D46 /* UITableView+Reusable.swift in Sources */,
 				D2C46B0120BD485B00CF8D46 /* StoryboardSceneBased.swift in Sources */,
+				D25B997520C5274C003E3E6F /* SliderCollectionViewCell.swift in Sources */,
 				D252A65A20BBF05F00BFCD76 /* CardDetailViewController.swift in Sources */,
 				D2C46AFB20BD485B00CF8D46 /* NibLoadable.swift in Sources */,
 				D24B700620B68E490043A536 /* TodayViewController+Addtions.swift in Sources */,
 				D24D4C3020B7D30C00D6C115 /* WorldPremiereCell.swift in Sources */,
-				D25B019520BE8F82003C0886 /* LimitedTimeTableCell.swift in Sources */,
 				D25B018F20BE8E03003C0886 /* GamesViewController.swift in Sources */,
 				D25B019220BE8E71003C0886 /* GamesViewController+Additions.swift in Sources */,
 				D2C46B0020BD485B00CF8D46 /* StoryboardBased.swift in Sources */,
 				D24D4C2C20B7D03200D6C115 /* FromTheEditorsCell.swift in Sources */,
+				D25B997920C53678003E3E6F /* GamesSectionHeaderCell.swift in Sources */,
 				D2C46AFC20BD485B00CF8D46 /* NibOwnerLoadable.swift in Sources */,
 				D2C46AFD20BD485B00CF8D46 /* Reusable.swift in Sources */,
 				D21A3B5D20BD399100CC5B90 /* SomeThingNewTableCell.swift in Sources */,

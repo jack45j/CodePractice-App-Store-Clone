@@ -11,39 +11,49 @@ import UIKit
 extension GamesViewController {
     /// MARK - Configuration
     
-    internal func configure(tableView: UITableView) {
-        tableView.register(cellType: LimitedTimeTableCell.self)
-        tableView.register(cellType: GamesSectionHeaderTableViewCell.self)
-        tableView.dataSource = self
-        tableView.delegate = self
+    internal func configure(collectionView: UICollectionView) {
+        collectionView.register(cellType: GamesSectionHeaderCell.self)
+        collectionView.register(cellType: SliderCollectionViewCell.self)
+        collectionView.dataSource = self
+        collectionView.delegate = self
     }
 }
 
 
-extension GamesViewController: UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        switch indexPath.row {
+extension GamesViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        switch section {
         case 0:
-            return tableView.dequeueReusableCell(for: indexPath) as GamesSectionHeaderTableViewCell
-        case 1:
-            return tableView.dequeueReusableCell(for: indexPath) as LimitedTimeTableCell
+            return 2
         default:
-            return tableView.dequeueReusableCell(for: indexPath) as LimitedTimeTableCell
+            return 0
         }
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         switch indexPath.row {
         case 0:
-            return GamesSectionHeaderTableViewCell.ViewHeight
+            return collectionView.dequeueReusableCell(for: indexPath) as GamesSectionHeaderCell
         case 1:
-            return GamesSliderCollectionViewCell.RowHeight
+            return collectionView.dequeueReusableCell(for: indexPath) as SliderCollectionViewCell
         default:
-            return 80
+            return collectionView.dequeueReusableCell(for: indexPath) as SliderCollectionViewCell
+        }
+    }
+}
+
+
+extension GamesViewController: UICollectionViewDelegateFlowLayout {
+    /// MARK: - UICollectionViewDelegateFlowLayout
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        switch indexPath.row {
+        case 0:
+            return CGSize(width: collectionView.bounds.width, height: GamesSectionHeaderCell.ViewHeight)
+        case 1:
+            return CGSize(width: collectionView.bounds.width, height: 288)
+        default:
+            return CGSize(width: collectionView.bounds.width, height: 288)
         }
     }
 }

@@ -9,12 +9,12 @@
 import UIKit
 
 class GamesViewController: UIViewController {
-    @IBOutlet private weak var uiTableViewGames: UITableView!
+    @IBOutlet private weak var uiCollectionViewGames: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         /// configure(Initialize) tableView
-        configure(tableView: uiTableViewGames)
+        configure(collectionView: uiCollectionViewGames)
     }
 }

@@ -9,7 +9,6 @@
 import UIKit
 
 class GamesSliderCollectionViewCell: UICollectionViewCell, NibReusable {
-    internal static let RowHeight: CGFloat = 300.0
     
     @IBOutlet private weak var uiViewBackGround: UIView!
     

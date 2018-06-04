@@ -23,22 +23,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="288"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ClashOfClans" translatesAutoresizingMaskIntoConstraints="NO" id="sKK-BE-qdM">
-                                <rect key="frame" x="8" y="78.5" width="304" height="200"/>
+                                <rect key="frame" x="0.0" y="78.5" width="320" height="200"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LIMITED TIME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHM-YS-3A7">
-                                <rect key="frame" x="8" y="8" width="82" height="14.5"/>
+                                <rect key="frame" x="0.0" y="8" width="82" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                                 <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Build your empire" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1U4-do-fB9">
-                                <rect key="frame" x="8" y="49.5" width="134" height="21"/>
+                                <rect key="frame" x="0.0" y="49.5" width="134" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clash of Clans" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGG-tg-o44">
-                                <rect key="frame" x="8" y="22.5" width="145" height="27"/>
+                                <rect key="frame" x="0.0" y="22.5" width="145" height="27"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -46,17 +46,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="sKK-BE-qdM" secondAttribute="trailing" constant="8" id="1cu-EN-GXu"/>
+                            <constraint firstAttribute="trailing" secondItem="sKK-BE-qdM" secondAttribute="trailing" id="1cu-EN-GXu"/>
                             <constraint firstItem="sKK-BE-qdM" firstAttribute="top" secondItem="1U4-do-fB9" secondAttribute="bottom" constant="8" id="4oi-Oh-yhk"/>
-                            <constraint firstItem="IHM-YS-3A7" firstAttribute="leading" secondItem="GYc-Am-hu4" secondAttribute="leading" constant="8" id="C2O-nO-i6e"/>
+                            <constraint firstItem="IHM-YS-3A7" firstAttribute="leading" secondItem="GYc-Am-hu4" secondAttribute="leading" id="C2O-nO-i6e"/>
                             <constraint firstItem="KGG-tg-o44" firstAttribute="top" secondItem="IHM-YS-3A7" secondAttribute="bottom" id="Dmw-G8-kea"/>
-                            <constraint firstItem="KGG-tg-o44" firstAttribute="leading" secondItem="GYc-Am-hu4" secondAttribute="leading" constant="8" id="DsF-kK-ww0"/>
+                            <constraint firstItem="KGG-tg-o44" firstAttribute="leading" secondItem="GYc-Am-hu4" secondAttribute="leading" id="DsF-kK-ww0"/>
                             <constraint firstItem="1U4-do-fB9" firstAttribute="top" secondItem="KGG-tg-o44" secondAttribute="bottom" id="EYR-u9-0hE"/>
                             <constraint firstItem="KGG-tg-o44" firstAttribute="top" secondItem="IHM-YS-3A7" secondAttribute="bottom" id="RuJ-GY-qkw"/>
-                            <constraint firstItem="sKK-BE-qdM" firstAttribute="leading" secondItem="GYc-Am-hu4" secondAttribute="leading" constant="8" id="Xt5-su-9uW"/>
+                            <constraint firstItem="sKK-BE-qdM" firstAttribute="leading" secondItem="GYc-Am-hu4" secondAttribute="leading" id="Xt5-su-9uW"/>
                             <constraint firstItem="IHM-YS-3A7" firstAttribute="top" secondItem="GYc-Am-hu4" secondAttribute="top" constant="8" id="YtV-Oa-d5t"/>
                             <constraint firstAttribute="bottom" secondItem="sKK-BE-qdM" secondAttribute="bottom" constant="9.5" id="ane-hf-xHE"/>
-                            <constraint firstItem="1U4-do-fB9" firstAttribute="leading" secondItem="GYc-Am-hu4" secondAttribute="leading" constant="8" id="cbd-yY-KsM"/>
+                            <constraint firstItem="1U4-do-fB9" firstAttribute="leading" secondItem="GYc-Am-hu4" secondAttribute="leading" id="cbd-yY-KsM"/>
                             <constraint firstItem="1U4-do-fB9" firstAttribute="top" secondItem="KGG-tg-o44" secondAttribute="bottom" id="ipp-ZX-3Ye"/>
                         </constraints>
                     </view>
