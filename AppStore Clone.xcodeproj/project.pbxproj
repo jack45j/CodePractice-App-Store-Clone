@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		D21A3B5D20BD399100CC5B90 /* SomeThingNewTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21A3B5B20BD399100CC5B90 /* SomeThingNewTableCell.swift */; };
 		D21A3B5E20BD399100CC5B90 /* SomeThingNewTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D21A3B5C20BD399100CC5B90 /* SomeThingNewTableCell.xib */; };
+		D2487AD220C665AA00E68C04 /* GamesListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2487AD020C665AA00E68C04 /* GamesListCollectionViewCell.swift */; };
+		D2487AD320C665AA00E68C04 /* GamesListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2487AD120C665AA00E68C04 /* GamesListCollectionViewCell.xib */; };
+		D2487AD620C6697D00E68C04 /* TitleAndSliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2487AD420C6697D00E68C04 /* TitleAndSliderCollectionViewCell.swift */; };
+		D2487AD720C6697D00E68C04 /* TitleAndSliderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2487AD520C6697D00E68C04 /* TitleAndSliderCollectionViewCell.xib */; };
 		D24B6FF220B680F10043A536 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24B6FF120B680F10043A536 /* AppDelegate.swift */; };
 		D24B6FF420B680F10043A536 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24B6FF320B680F10043A536 /* TodayViewController.swift */; };
 		D24B6FF720B680F10043A536 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D24B6FF520B680F10043A536 /* Main.storyboard */; };
@@ -50,6 +54,10 @@
 /* Begin PBXFileReference section */
 		D21A3B5B20BD399100CC5B90 /* SomeThingNewTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeThingNewTableCell.swift; sourceTree = "<group>"; };
 		D21A3B5C20BD399100CC5B90 /* SomeThingNewTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SomeThingNewTableCell.xib; sourceTree = "<group>"; };
+		D2487AD020C665AA00E68C04 /* GamesListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesListCollectionViewCell.swift; sourceTree = "<group>"; };
+		D2487AD120C665AA00E68C04 /* GamesListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GamesListCollectionViewCell.xib; sourceTree = "<group>"; };
+		D2487AD420C6697D00E68C04 /* TitleAndSliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleAndSliderCollectionViewCell.swift; sourceTree = "<group>"; };
+		D2487AD520C6697D00E68C04 /* TitleAndSliderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleAndSliderCollectionViewCell.xib; sourceTree = "<group>"; };
 		D24B6FEE20B680F10043A536 /* AppStore Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppStore Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24B6FF120B680F10043A536 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D24B6FF320B680F10043A536 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +121,7 @@
 		D21A3B5F20BD399E00CC5B90 /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				D24D4C3720B7F23D00D6C115 /* BaseRoundedCardCell.swift */,
 				D24D4C3320B7E85C00D6C115 /* TodaySectionHeaderCell.swift */,
 				D24D4C3420B7E85C00D6C115 /* TodaySectionHeaderCell.xib */,
 				D24D4C2A20B7D03200D6C115 /* FromTheEditorsCell.swift */,
@@ -209,7 +218,6 @@
 		D24D4C3220B7E82D00D6C115 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				D24D4C3720B7F23D00D6C115 /* BaseRoundedCardCell.swift */,
 				D21A3B5820BD379400CC5B90 /* Today */,
 				D25B019720BE8F98003C0886 /* Games */,
 			);
@@ -250,6 +258,10 @@
 				D25B019920BE9727003C0886 /* GamesSliderCollectionViewCell.xib */,
 				D25B997320C5274C003E3E6F /* SliderCollectionViewCell.swift */,
 				D25B997420C5274C003E3E6F /* SliderCollectionViewCell.xib */,
+				D2487AD020C665AA00E68C04 /* GamesListCollectionViewCell.swift */,
+				D2487AD120C665AA00E68C04 /* GamesListCollectionViewCell.xib */,
+				D2487AD420C6697D00E68C04 /* TitleAndSliderCollectionViewCell.swift */,
+				D2487AD520C6697D00E68C04 /* TitleAndSliderCollectionViewCell.xib */,
 			);
 			path = UICollectionView;
 			sourceTree = "<group>";
@@ -355,6 +367,8 @@
 				D21A3B5E20BD399100CC5B90 /* SomeThingNewTableCell.xib in Resources */,
 				D2C6EFDB20BD2E55009949C8 /* SomeThingNewCell.xib in Resources */,
 				D24B6FFC20B680F20043A536 /* LaunchScreen.storyboard in Resources */,
+				D2487AD720C6697D00E68C04 /* TitleAndSliderCollectionViewCell.xib in Resources */,
+				D2487AD320C665AA00E68C04 /* GamesListCollectionViewCell.xib in Resources */,
 				D24D4C3620B7E85C00D6C115 /* TodaySectionHeaderCell.xib in Resources */,
 				D24B6FF920B680F20043A536 /* Assets.xcassets in Resources */,
 				D24B6FF720B680F10043A536 /* Main.storyboard in Resources */,
@@ -392,10 +406,12 @@
 				D21A3B5D20BD399100CC5B90 /* SomeThingNewTableCell.swift in Sources */,
 				D24D4C3820B7F23D00D6C115 /* BaseRoundedCardCell.swift in Sources */,
 				D2C46AFE20BD485B00CF8D46 /* UICollectionView+Reusable.swift in Sources */,
+				D2487AD620C6697D00E68C04 /* TitleAndSliderCollectionViewCell.swift in Sources */,
 				D2974B6020BD1EF8000349B3 /* Date+Additions.swift in Sources */,
 				D24B6FF420B680F10043A536 /* TodayViewController.swift in Sources */,
 				D24D4C3520B7E85C00D6C115 /* TodaySectionHeaderCell.swift in Sources */,
 				D24B6FF220B680F10043A536 /* AppDelegate.swift in Sources */,
+				D2487AD220C665AA00E68C04 /* GamesListCollectionViewCell.swift in Sources */,
 				D25B019A20BE9727003C0886 /* GamesSliderCollectionViewCell.swift in Sources */,
 				D24D4C2820B7B07E00D6C115 /* AppOfTheDayCell.swift in Sources */,
 				D24B700B20B6997C0043A536 /* GetStartedListCell.swift in Sources */,

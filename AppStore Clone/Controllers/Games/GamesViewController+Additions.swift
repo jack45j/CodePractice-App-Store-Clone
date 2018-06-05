@@ -14,6 +14,7 @@ extension GamesViewController {
     internal func configure(collectionView: UICollectionView) {
         collectionView.register(cellType: GamesSectionHeaderCell.self)
         collectionView.register(cellType: SliderCollectionViewCell.self)
+        collectionView.register(cellType: TitleAndSliderCollectionViewCell.self)
         collectionView.dataSource = self
         collectionView.delegate = self
     }
@@ -24,7 +25,7 @@ extension GamesViewController: UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch section {
         case 0:
-            return 2
+            return 3
         default:
             return 0
         }
@@ -36,6 +37,8 @@ extension GamesViewController: UICollectionViewDelegate, UICollectionViewDataSou
             return collectionView.dequeueReusableCell(for: indexPath) as GamesSectionHeaderCell
         case 1:
             return collectionView.dequeueReusableCell(for: indexPath) as SliderCollectionViewCell
+        case 2:
+            return collectionView.dequeueReusableCell(for: indexPath) as TitleAndSliderCollectionViewCell
         default:
             return collectionView.dequeueReusableCell(for: indexPath) as SliderCollectionViewCell
         }

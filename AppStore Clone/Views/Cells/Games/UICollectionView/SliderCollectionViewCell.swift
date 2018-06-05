@@ -12,6 +12,9 @@ class SliderCollectionViewCell: UICollectionViewCell, NibReusable {
     
     @IBOutlet private weak var uiCollectionViewSlider: UICollectionView!
     
+    /// Section inset of uiCollectionViewSlider
+    private let SectionInset: CGFloat = 32.0
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -21,6 +24,7 @@ class SliderCollectionViewCell: UICollectionViewCell, NibReusable {
     }
 }
 
+
 extension SliderCollectionViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
@@ -28,6 +32,11 @@ extension SliderCollectionViewCell: UICollectionViewDelegate, UICollectionViewDa
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         return uiCollectionViewSlider.dequeueReusableCell(for: indexPath) as GamesSliderCollectionViewCell
+    }
+    
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        // Stop scrollView sliding:
+        targetContentOffset.pointee = scrollView.contentOffset
     }
 }
 
@@ -37,7 +46,6 @@ extension SliderCollectionViewCell: UICollectionViewDelegateFlowLayout {
     /// MARK: - UICollectionViewDelegateFlowLayout
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        print(collectionViewLayout.collectionView?.contentInset.left)
-        return CGSize(width: collectionView.bounds.width - 32 , height: 288)
+        return CGSize(width: collectionView.bounds.width - SectionInset , height: 288)
     }
 }
