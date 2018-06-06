@@ -2,7 +2,7 @@
 //  SliderCollectionViewCell.swift
 //  AppStore Clone
 //
-//  Created by instance on 2018/6/4.
+//  Created by Yi-Cheng,Lin on 06/04/18
 //  Copyright © 2018年 Benson Lin. All rights reserved.
 //
 
@@ -12,6 +12,8 @@ class SliderCollectionViewCell: UICollectionViewCell, NibReusable {
     
     @IBOutlet private weak var uiCollectionViewSlider: UICollectionView!
     
+    
+    
     /// Section inset of uiCollectionViewSlider
     private let SectionInset: CGFloat = 32.0
     
@@ -19,6 +21,11 @@ class SliderCollectionViewCell: UICollectionViewCell, NibReusable {
         super.awakeFromNib()
         
         uiCollectionViewSlider.register(cellType: GamesSliderCollectionViewCell.self)
+        
+        /// have some offset problem.
+        /// maybe will using flow layout delegate to custom paging feature.
+        uiCollectionViewSlider.isPagingEnabled = true
+        
         uiCollectionViewSlider.delegate = self
         uiCollectionViewSlider.dataSource = self
     }
@@ -32,11 +39,6 @@ extension SliderCollectionViewCell: UICollectionViewDelegate, UICollectionViewDa
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         return uiCollectionViewSlider.dequeueReusableCell(for: indexPath) as GamesSliderCollectionViewCell
-    }
-    
-    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        // Stop scrollView sliding:
-        targetContentOffset.pointee = scrollView.contentOffset
     }
 }
 

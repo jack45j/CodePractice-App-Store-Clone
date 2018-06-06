@@ -2,7 +2,7 @@
 //  GamesListCollectionViewCell.swift
 //  AppStore Clone
 //
-//  Created by instance on 2018/6/5.
+//  Created by Yi-Cheng,Lin on 06/05/18
 //  Copyright © 2018年 Benson Lin. All rights reserved.
 //
 

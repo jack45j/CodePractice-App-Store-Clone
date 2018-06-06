@@ -41,16 +41,6 @@ class TodaySectionHeaderCell: UICollectionViewCell, NibReusable {
         }
     }
     
-    
-//    // MARK: - Factory Method
-//    
-//    internal static func dequeue(fromCollectionView collectionView: UICollectionView, ofKind kind: String, atIndexPath indexPath: IndexPath) -> TodaySectionHeaderCell {
-//        guard let view: TodaySectionHeaderCell = collectionView.dequeueSupplementaryView(kind: kind, indexPath: indexPath) else {
-//            fatalError("Failed to dequeue TodaySectionHeaderCell")
-//        }
-//        return view
-//    }
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         TodaySectionHeaderCell.ViewHeight = self.frame.size.height
